@@ -1,6 +1,3 @@
-Okay, here's a comprehensive README.md file tailored for your DHT monitor project, keeping in mind the features and technologies you've used, and with a structure designed for clarity on GitHub.
-
-```markdown
 # DHT Sensor Monitoring Dashboard
 
 A React-based web application for real-time monitoring of temperature and humidity data from a DHT sensor. This application features a user-friendly dashboard that displays data in both tabular and graphical formats, along with user authentication and theming options.
