@@ -1,0 +1,365 @@
+/* src/styles/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    @apply text-gray-700 dark:text-gray-300; /* Applied text color */
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    @apply rounded-lg shadow-md;
+}
+/* Theme specific container styles */
+.dark .container {
+    @apply bg-gray-800 text-gray-100; /*Dark mode styles*/
+}
+.light .container {
+    @apply bg-white text-gray-700;/*Light mode styles*/
+}
+
+
+h1 {
+    @apply text-center mb-5; /*Applied Text and margin */
+}
+/* Table Styles */
+.table-container {
+   @apply overflow-x-auto;  /*Applied overflow-x-auto */
+}
+
+.data-table {
+  @apply w-full border-collapse mb-5 shadow-md; /*Applied styles for the whole table*/
+}
+
+.data-table th, .data-table td {
+   @apply p-2 border border-gray-300 text-left; /* Applied padding, border and text alignment */
+}
+
+.data-table th {
+   @apply bg-gray-200; /* applied background color */
+}
+/* Dark theme */
+.dark .data-table th {
+  @apply bg-gray-700 text-gray-100;  /* Applied Background and text color */
+}
+/* Light theme */
+.light .data-table th {
+   @apply bg-gray-200 text-gray-800;  /* Applied Background and text color */
+}
+
+/* Chart Styles */
+.chart-container {
+    @apply mb-8; /*Applied Margin bottom */
+}
+/* Data Display Styles */
+.data-display {
+  @apply p-5 rounded-lg shadow-md mb-5 text-center;
+  background-color: #f9f9f9; /*Applied padding, radius, box shadow and margin */
+}
+.dark .data-display {
+    @apply bg-gray-700 text-gray-100; /*Applied Dark mode styles*/
+}
+
+.light .data-display {
+    @apply bg-gray-100 text-gray-800; /*Applied Light mode styles*/
+}
+
+
+.data-item {
+    @apply mt-2;  /*Applied margin top */
+}
+/* Filter Controls */
+.filter-controls {
+    @apply flex gap-2 mb-5 flex-wrap;   /*Applied flex, gap and margin bottom */
+}
+
+.filter-controls label {
+    @apply flex items-center gap-2;  /*Applied items and gap */
+}
+
+.filter-controls select,
+.filter-controls input
+{
+   @apply px-2 py-1 border border-gray-300 rounded-md; /* Applied padding, borders and border radius */
+}
+
+.dark .filter-controls select,
+.dark .filter-controls input
+{
+    @apply bg-gray-700 text-gray-100 border-gray-500; /*Applied dark background, text and border */
+}
+.light .filter-controls select,
+.light .filter-controls input
+{
+    @apply bg-white text-gray-800 border-gray-300;  /*Applied light background, text and border */
+}
+/* Header Styles */
+.app-header {
+  @apply py-4 mb-4 flex items-center justify-between; /*Applied padding margin and flex */
+}
+.dark .app-header {
+    @apply bg-gray-900 text-gray-100;   /*Applied Dark mode background and text*/
+}
+.light .app-header {
+    @apply bg-white text-gray-800;    /*Applied Light mode background and text*/
+}
+
+/* Chart Buttons */
+.chart-buttons {
+    @apply flex justify-center gap-2 mb-5;   /*Applied flex, gap and margin bottom */
+}
+
+.chart-buttons button {
+  @apply px-3 py-2  border border-gray-300 rounded-md cursor-pointer transition-colors;
+    background-color: #f0f0f0; /*Applied padding, background, border, radius and transition*/
+}
+.dark .chart-buttons button:hover,
+.dark .chart-buttons button.active
+{
+    @apply bg-gray-600 text-gray-100;  /*Applied Dark background and text*/
+}
+.light .chart-buttons button:hover,
+.light .chart-buttons button.active
+{
+  @apply bg-gray-300 text-gray-800; /*Applied Light background and text*/
+}
+.dark .chart-buttons button{
+    background-color: #4a5568; /* Applied Dark background  */
+     color: #edf2f7;
+}
+.light .chart-buttons button {
+    background-color: #f0f0f0;/*Applied light background*/
+    color: #2d3748;
+}
+/* Download button */
+.download-button-container {
+  @apply relative inline-block; /*Applied position*/
+}
+
+.download-button {
+  @apply px-2 py-1 bg-green-500 text-white border-none rounded-md cursor-pointer text-lg; /*Applied padding, background, text, border and cursor*/
+}
+.dark .download-button {
+  @apply bg-gray-700 text-gray-100; /*Applied Dark mode background and text*/
+}
+
+.light .download-button {
+ @apply bg-green-500 text-white; /*Applied light mode background and text*/
+}
+.download-button:hover {
+  @apply bg-green-600 ;/* Applied background on hover */
+}
+/* Download Dropdown */
+.download-dropdown {
+  @apply absolute top-full left-0 bg-white border border-gray-300 rounded-md shadow-md z-10;   /*Applied styles for absolute position, background, borders, radius and shadow*/
+}
+.dark .download-dropdown {
+  @apply bg-gray-700 text-gray-100; /*Applied Dark background and text*/
+}
+.light .download-dropdown {
+    @apply bg-white text-gray-800;  /*Applied Light background and text*/
+}
+
+.download-dropdown button {
+    @apply block w-full text-left px-2 py-2 border-none bg-transparent cursor-pointer;  /*Applied styles for block, text, padding and cursor*/
+}
+
+.download-dropdown button:hover {
+   @apply bg-gray-100;  /*Applied background color on hover*/
+}
+.dark .download-dropdown button:hover{
+   @apply bg-gray-600 text-gray-100;   /*Applied dark background and text color*/
+}
+
+.light .download-dropdown button:hover{
+    @apply bg-gray-100 text-gray-800; /*Applied light background and text color*/
+}
+/* src/styles/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    @apply text-gray-700 dark:text-gray-300; /* Applied text color */
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+     @apply rounded-lg shadow-md;
+}
+/* Theme specific container styles */
+.dark .container {
+    @apply bg-gray-800 text-gray-100; /*Dark mode styles*/
+}
+.light .container {
+   @apply bg-white text-gray-700;/*Light mode styles*/
+}
+
+
+h1 {
+    @apply text-center mb-5; /*Applied Text and margin */
+}
+/* Table Styles */
+.table-container {
+   @apply overflow-x-auto;  /*Applied overflow-x-auto */
+}
+
+.data-table {
+ @apply w-full border-collapse mb-5 shadow-md; /*Applied styles for the whole table*/
+}
+
+.data-table th, .data-table td {
+   @apply p-2 border border-gray-300 text-left; /* Applied padding, border and text alignment */
+}
+
+.data-table th {
+ @apply bg-gray-200; /* applied background color */
+}
+/* Dark theme */
+.dark .data-table th {
+  @apply bg-gray-700 text-gray-100;  /* Applied Background and text color */
+}
+/* Light theme */
+.light .data-table th {
+   @apply bg-gray-200 text-gray-800;  /* Applied Background and text color */
+}
+
+/* Chart Styles */
+.chart-container {
+   @apply mb-8; /*Applied Margin bottom */
+}
+/* Data Display Styles */
+.data-display {
+  @apply p-5 rounded-lg shadow-md mb-5 text-center;
+  background-color: #f9f9f9; /*Applied padding, radius, box shadow and margin */
+}
+.dark .data-display {
+    @apply bg-gray-700 text-gray-100; /*Applied Dark mode styles*/
+}
+
+.light .data-display {
+  @apply bg-gray-100 text-gray-800; /*Applied Light mode styles*/
+}
+
+
+.data-item {
+   @apply mt-2;  /*Applied margin top */
+}
+/* Filter Controls */
+.filter-controls {
+   @apply flex gap-2 mb-5 flex-wrap;   /*Applied flex, gap and margin bottom */
+}
+
+.filter-controls label {
+   @apply flex items-center gap-2;  /*Applied items and gap */
+}
+
+.filter-controls select,
+.filter-controls input
+{
+  @apply px-2 py-1 border border-gray-300 rounded-md; /* Applied padding, borders and border radius */
+}
+
+.dark .filter-controls select,
+.dark .filter-controls input
+{
+   @apply bg-gray-700 text-gray-100 border-gray-500; /*Applied dark background, text and border */
+}
+.light .filter-controls select,
+.light .filter-controls input
+{
+  @apply bg-white text-gray-800 border-gray-300;  /*Applied light background, text and border */
+}
+/* Header Styles */
+.app-header {
+  @apply py-4 mb-4  flex items-center justify-between; /*Applied padding margin and flex */
+}
+.dark .app-header {
+   @apply bg-gray-900 text-gray-100;   /*Applied Dark mode background and text*/
+}
+.light .app-header {
+    @apply bg-white text-gray-800;    /*Applied Light mode background and text*/
+}
+
+/* Chart Buttons */
+.chart-buttons {
+   @apply flex justify-center gap-2 mb-5;   /*Applied flex, gap and margin bottom */
+}
+
+.chart-buttons button {
+ @apply px-3 py-2  border border-gray-300 rounded-md cursor-pointer transition-colors;
+    background-color: #f0f0f0; /*Applied padding, background, border, radius and transition*/
+}
+.dark .chart-buttons button:hover,
+.dark .chart-buttons button.active
+{
+    @apply bg-gray-600 text-gray-100;  /*Applied Dark background and text*/
+}
+.light .chart-buttons button:hover,
+.light .chart-buttons button.active
+{
+  @apply bg-gray-300 text-gray-800; /*Applied Light background and text*/
+}
+.dark .chart-buttons button{
+    background-color: #4a5568; /* Applied Dark background  */
+     color: #edf2f7;
+}
+.light .chart-buttons button {
+    background-color: #f0f0f0;/*Applied light background*/
+    color: #2d3748;
+}
+
+/* Download button */
+.download-button-container {
+    @apply relative inline-block; /*Applied position*/
+}
+
+.download-button {
+  @apply px-2 py-1 bg-green-500 text-white border-none rounded-md cursor-pointer text-lg; /*Applied padding, background, text, border and cursor*/
+}
+.dark .download-button {
+    @apply bg-gray-700 text-gray-100; /*Applied Dark mode background and text*/
+}
+
+.light .download-button {
+    @apply bg-green-500 text-white; /*Applied light mode background and text*/
+}
+.download-button:hover {
+  @apply bg-green-600 ;/* Applied background on hover */
+}
+/* Download Dropdown */
+.download-dropdown {
+   @apply absolute top-full left-0 bg-white border border-gray-300 rounded-md shadow-md z-10;   /*Applied styles for absolute position, background, borders, radius and shadow*/
+}
+.dark .download-dropdown {
+ @apply bg-gray-700 text-gray-100; /*Applied Dark background and text*/
+}
+.light .download-dropdown {
+ @apply bg-white text-gray-800;  /*Applied Light background and text*/
+}
+
+.download-dropdown button {
+    @apply block w-full text-left px-2 py-2 border-none bg-transparent cursor-pointer;  /*Applied styles for block, text, padding and cursor*/
+}
+
+.download-dropdown button:hover {
+ @apply bg-gray-100;  /*Applied background color on hover*/
+}
+.dark .download-dropdown button:hover{
+  @apply bg-gray-600 text-gray-100;   /*Applied dark background and text color*/
+}
+
+.light .download-dropdown button:hover{
+   @apply bg-gray-100 text-gray-800; /*Applied light background and text color*/
+}
